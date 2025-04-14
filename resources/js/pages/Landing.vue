@@ -1,11 +1,10 @@
 <template>
     <AppLayout>
-        <div class="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto mt-10 p-8">
+        <div class=" flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto mt-10 p-8">
 
-            <!-- Left Content -->
-            <div class="w-full lg:w-1/2 space-y-8">
+            <div class="w-full lg:w-1/2 space-y-8 order-2 md:order-1">
             <h1 class="text-3xl font-bold mb-6">The Smartest Way to Build Your <span class="text-sky-600">Startup</span> Team</h1>
-            <form @submit.prevent="submit" class="space-y-8 sm:mr-32 md:mr-0bg-white shadow p-6 rounded-xl">
+            <form @submit.prevent="submit" class="space-y-8 sm:mr-32 md:mr-0bg-white p-6 rounded-xl">
 
                 <h1>Get Started</h1>
                 <input v-model="form.email" type="email" placeholder="Email" class="input bg-white" />
@@ -55,8 +54,8 @@
             </div>
 
 
-            <div class="w-full flex-col justify-center items-center lg:w-1/2 mt-12 lg:mt-0 bg-gray-400">
-                    <img src="/images/mask_group.png">
+            <div class="order-1 md:order-2 w-full flex flex-col justify-center items-center lg:w-1/2 mt-12 lg:mt-0">
+                    <img src="/images/mask_group.png" class="h-72">
 
                 <div class="mb-12">
                     <div class="p-6 rounded-xl max-w-xl mx-auto">
